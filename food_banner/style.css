@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+    .image_container {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+    .content {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        .burger {
+            position: absolute;
+            top: 100%;
+            bottom: 100%;
+            left: 100%;
+            right: 100%;
+        }
+
+        .tomato1 {
+            position: absolute;
+            top: 60%;
+
+            left: 10%;
+
+        }
+
+        .tomato2 {
+            position: absolute;
+            top: 35%;
+
+            right: 15%;
+        }
+
+        .pizza {
+            position: absolute;
+            top: 45%;
+            right: 10%;
+        }
+
+        .momo {
+            position: absolute;
+            top: 6%;
+
+            right: 15%;
+        }
+
+        .leaf {
+            position: absolute;
+            top: 12%;
+
+            left: 28%;
+
+        }
+
+        .burger {
+            position: absolute;
+
+            top: 20%;
+
+            left: 12%;
+
+        }
+
+        .text-context {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 60px;
+            text-align: center;
+
+
+
+            h1 {
+                font-size: 64px;
+                line-height: 60px;
+                /*lines ka apus me distance*/
+                margin-bottom: 40px;
+                margin-top: 40px;
+            }
+
+            p {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: bold;
+                text-align: center;
+                margin: 0 auto;
+                max-width: 500px;
+                /*center me rakhny k lye*/
+            }
+        }
+
+        .info-section {
+            display: flex;
+            margin-top: 120px;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            padding: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+
+            .info-icon {
+
+                width: 50px;
+                height: 50px;
+            }
+
+            .info-number {
+                font-size: 24px;
+                font-weight: bold;
+                color: red;
+            }
+
+            .info-item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 12px;
+
+            }
+
+            .info-text {
+                display: flex;
+                flex-direction: column;
+            }
+
+        }
+    }
+}

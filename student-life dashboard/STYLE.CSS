@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: gray;
+}
+
+.tabs {
+    display: flex;
+    gap: 250px;
+    align-items: center;
+
+    .taskbtn {
+        background: white;
+        color: #534AB7;
+        border: none;
+        padding-left: 80px;
+    }
+
+    .timerbtn {
+        background: white;
+        color: #534AB7;
+        border: none;
+        padding-left: 20px;
+    }
+}
+
+.container {
+    max-width: 500px;
+
+    border: none;
+    border-radius: 10px;
+    margin: 30px auto;
+    background-color: white;
+
+
+}
+
+.container h1 {
+    text-align: center;
+    color: #534AB7;
+
+
+}
+
+.container input {
+    text-align: left;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    border-radius: 8px;
+    outline: none;
+    width: 300px;
+    border: 1px solid #ccc;
+}
+
+.container BUTTON {
+    WIDTH: 60PX;
+    height: 40PX;
+    text-align: center;
+    border-radius: 8PX;
+    background: purple;
+    color: white;
+    margin: 5PX;
+}
+
+ul {
+    list-style: none;
+}
+
+.container .donebutton {
+    border: none;
+    background: green;
+    color: white;
+}
+
+.container .deletebutton {
+    border: none;
+    background: red;
+    color: white;
+}
+
+.task-item.done .task-text {
+    text-decoration: line-through;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.task-item.overdue .task-text {
+    color: red;
+}

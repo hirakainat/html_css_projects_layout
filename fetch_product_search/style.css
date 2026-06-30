@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.product_container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.product_card {
+    box-shadow: 0px 7px 32px rgba(0, 0, 0, 0.25);
+    width: 600px;
+    min-height: 150px;
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.image_container {
+    flex: 1;
+    /* yh pora card ly raha ha */
+    border-right: 1px solid black;
+
+}
+
+.product_content {
+    flex: 5;
+}

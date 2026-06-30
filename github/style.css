@@ -1,0 +1,125 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    /* ← same level fix */
+    width: 50%;
+    max-width: 60rem;
+}
+
+.search input {
+    width: 100%;
+    padding: 10px;
+}
+
+input:focus-visible {
+    outline: 1px solid purple;
+}
+
+/* ✅ Global button - dono pe apply hoga */
+.primary-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: purple;
+    color: white;
+    padding: 8px 16px;
+    /* ← 0.5 rem 1 rem wali galti bhi fix */
+    height: 36px;
+
+    cursor: pointer;
+}
+
+.profile-box {
+    margin-top: 30px;
+    padding: 1rem 2rem;
+    /* ← 2 rem → 2rem fix */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 60rem;
+    margin-bottom: 50px;
+    transition: 0.5s ease-in;
+}
+
+.profile-box:hover {
+    transform: rotate(-5deg);
+    transition: 0.5s ease-in;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.top-section button {
+    align-self: center;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.left h1 {
+    font-size: 20px;
+}
+
+
+.avatar {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.avatar img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about {
+    margin: 2rem;
+}
+
+.about p {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.status {
+    display: grid;
+    margin: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.status-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
